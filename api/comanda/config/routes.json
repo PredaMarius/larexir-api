@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comandas",
+      "handler": "Comanda.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comandas/count",
+      "handler": "Comanda.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comandas/:id",
+      "handler": "Comanda.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comandas",
+      "handler": "Comanda.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comandas/:id",
+      "handler": "Comanda.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comandas/:id",
+      "handler": "Comanda.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

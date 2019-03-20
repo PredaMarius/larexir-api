@@ -1,0 +1,67 @@
+{
+  "connection": "default",
+  "collectionName": "comanda",
+  "info": {
+    "name": "comanda",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "dataComanda": {
+      "default": "",
+      "type": "date"
+    },
+    "clientClient": {
+      "default": "",
+      "type": "string"
+    },
+    "valoareCatalog": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "discount": {
+      "default": 0,
+      "type": "integer"
+    },
+    "cursValutar": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "valoareComanda": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "valoareClientFinal": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "observatii": {
+      "default": "",
+      "type": "string"
+    },
+    "adresaLivrare": {
+      "default": "",
+      "type": "string"
+    },
+    "stadiu": {
+      "default": "NETRANSMISA",
+      "type": "string"
+    },
+    "IdDevco": {
+      "default": "",
+      "type": "integer"
+    },
+    "idFirma": {
+      "model": "firma",
+      "via": "comandas"
+    },
+    "comandarepers": {
+      "collection": "comandareper",
+      "via": "idComanda"
+    }
+  }
+}

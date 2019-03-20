@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/adresalivrares",
+      "handler": "Adresalivrare.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/adresalivrares/count",
+      "handler": "Adresalivrare.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/adresalivrares/:id",
+      "handler": "Adresalivrare.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/adresalivrares",
+      "handler": "Adresalivrare.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/adresalivrares/:id",
+      "handler": "Adresalivrare.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/adresalivrares/:id",
+      "handler": "Adresalivrare.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

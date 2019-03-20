@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pretcomponentas",
+      "handler": "Pretcomponenta.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pretcomponentas/count",
+      "handler": "Pretcomponenta.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pretcomponentas/:id",
+      "handler": "Pretcomponenta.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pretcomponentas",
+      "handler": "Pretcomponenta.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pretcomponentas/:id",
+      "handler": "Pretcomponenta.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pretcomponentas/:id",
+      "handler": "Pretcomponenta.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

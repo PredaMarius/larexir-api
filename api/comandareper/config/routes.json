@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comandarepers",
+      "handler": "Comandareper.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comandarepers/count",
+      "handler": "Comandareper.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comandarepers/:id",
+      "handler": "Comandareper.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comandarepers",
+      "handler": "Comandareper.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comandarepers/:id",
+      "handler": "Comandareper.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comandarepers/:id",
+      "handler": "Comandareper.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

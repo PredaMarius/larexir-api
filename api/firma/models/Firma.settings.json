@@ -1,0 +1,133 @@
+{
+  "connection": "default",
+  "collectionName": "firmas",
+  "info": {
+    "name": "firma",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "denumire": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "codFiscal": {
+      "default": "",
+      "type": "string"
+    },
+    "atributCodFiscal": {
+      "default": "",
+      "type": "string"
+    },
+    "regCom": {
+      "default": "",
+      "type": "string"
+    },
+    "oras": {
+      "default": "",
+      "type": "string"
+    },
+    "adresa": {
+      "default": "",
+      "type": "string"
+    },
+    "judet": {
+      "default": "",
+      "type": "string"
+    },
+    "telefon": {
+      "default": "",
+      "type": "string"
+    },
+    "email": {
+      "default": "",
+      "type": "email"
+    },
+    "agent": {
+      "default": "",
+      "type": "string"
+    },
+    "ruta": {
+      "default": "",
+      "type": "string"
+    },
+    "cont": {
+      "default": "",
+      "type": "string"
+    },
+    "banca": {
+      "default": "",
+      "type": "string"
+    },
+    "soldInitial": {
+      "default": "",
+      "type": "decimal"
+    },
+    "observatii": {
+      "default": "",
+      "type": "string"
+    },
+    "persoanaContact": {
+      "default": "",
+      "type": "string"
+    },
+    "activ": {
+      "default": "",
+      "type": "string"
+    },
+    "discountJV": {
+      "default": "",
+      "type": "integer"
+    },
+    "discountRO": {
+      "default": "",
+      "type": "integer"
+    },
+    "discountRE": {
+      "default": "",
+      "type": "integer"
+    },
+    "discountUG": {
+      "default": "",
+      "type": "integer"
+    },
+    "discountPI": {
+      "default": "",
+      "type": "integer"
+    },
+    "discountJO": {
+      "default": "",
+      "type": "integer"
+    },
+    "discountCO": {
+      "default": "",
+      "type": "integer"
+    },
+    "atentionare": {
+      "default": "",
+      "type": "string"
+    },
+    "idDevco": {
+      "default": "",
+      "type": "integer"
+    },
+    "adresalivrares": {
+      "collection": "adresalivrare",
+      "via": "idFirma"
+    },
+    "comandas": {
+      "collection": "comanda",
+      "via": "idFirma"
+    },
+    "users": {
+      "collection": "user",
+      "via": "idFirma",
+      "plugin": "users-permissions"
+    }
+  }
+}

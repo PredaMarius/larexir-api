@@ -1,0 +1,48 @@
+{
+  "connection": "default",
+  "collectionName": "materials",
+  "info": {
+    "name": "material",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "tipProdus": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "key": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "denumire": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "pret": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "atentionare": {
+      "default": "",
+      "type": "string"
+    },
+    "tipMaterial": {
+      "default": "",
+      "type": "string"
+    },
+    "activ": {
+      "default": "DA",
+      "maxLength": 2,
+      "type": "string",
+      "required": true
+    }
+  }
+}

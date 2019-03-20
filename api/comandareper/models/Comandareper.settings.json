@@ -1,0 +1,141 @@
+{
+  "connection": "default",
+  "collectionName": "comandarepers",
+  "info": {
+    "name": "comandareper",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "idComanda": {
+      "model": "comanda",
+      "via": "comandarepers"
+    },
+    "nrCrt": {
+      "default": "",
+      "type": "integer"
+    },
+    "tipSubprodus": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "lungime": {
+      "default": 0,
+      "type": "integer"
+    },
+    "lungimeFinala": {
+      "default": 0,
+      "type": "integer"
+    },
+    "inaltime": {
+      "default": 0,
+      "type": "integer"
+    },
+    "inaltimeFinala": {
+      "default": 0,
+      "type": "integer"
+    },
+    "deschidere": {
+      "default": "",
+      "type": "string"
+    },
+    "culoareLamela": {
+      "default": "",
+      "type": "integer"
+    },
+    "culoareCaseta": {
+      "default": "",
+      "type": "integer"
+    },
+    "material": {
+      "default": "",
+      "type": "integer"
+    },
+    "codMaterial": {
+      "default": "",
+      "type": "string"
+    },
+    "lungimeSnur": {
+      "default": 0,
+      "type": "integer"
+    },
+    "actionare": {
+      "default": "",
+      "type": "string"
+    },
+    "tipActionare": {
+      "default": "",
+      "type": "integer"
+    },
+    "actionareStDr": {
+      "default": "",
+      "maxLength": 2,
+      "type": "string"
+    },
+    "ax": {
+      "default": "",
+      "maxLength": 45,
+      "type": "string"
+    },
+    "culoareComponente": {
+      "default": "",
+      "type": "string"
+    },
+    "optional1": {
+      "default": "",
+      "type": "integer"
+    },
+    "optional2": {
+      "default": "",
+      "type": "integer"
+    },
+    "optional3": {
+      "default": "",
+      "type": "integer"
+    },
+    "console": {
+      "default": 0,
+      "type": "integer"
+    },
+    "buc": {
+      "default": 1,
+      "type": "integer"
+    },
+    "mp": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "pretCatalog": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "pretCuDiscount": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "pretClientFinal": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "observatii": {
+      "default": "",
+      "type": "string"
+    },
+    "fotografii": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "tipProdus": {
+      "default": "",
+      "type": "string",
+      "required": true
+    }
+  }
+}

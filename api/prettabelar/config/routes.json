@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/prettabelars",
+      "handler": "Prettabelar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prettabelars/count",
+      "handler": "Prettabelar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/prettabelars/:id",
+      "handler": "Prettabelar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/prettabelars",
+      "handler": "Prettabelar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/prettabelars/:id",
+      "handler": "Prettabelar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/prettabelars/:id",
+      "handler": "Prettabelar.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

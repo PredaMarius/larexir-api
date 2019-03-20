@@ -1,0 +1,55 @@
+{
+  "connection": "default",
+  "collectionName": "produses",
+  "info": {
+    "name": "produs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "tipProdus": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "key": {
+      "default": "",
+      "type": "integer",
+      "required": true
+    },
+    "denumire": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "atentionare": {
+      "default": "",
+      "type": "string"
+    },
+    "coteFinale": {
+      "default": "",
+      "type": "string"
+    },
+    "cotePanza": {
+      "default": "",
+      "type": "string"
+    },
+    "pretMP": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "dimLamela": {
+      "default": "",
+      "type": "integer"
+    },
+    "activ": {
+      "default": "DA",
+      "maxLength": 2,
+      "type": "string"
+    }
+  }
+}

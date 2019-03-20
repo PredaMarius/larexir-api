@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/culoares",
+      "handler": "Culoare.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/culoares/count",
+      "handler": "Culoare.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/culoares/:id",
+      "handler": "Culoare.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/culoares",
+      "handler": "Culoare.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/culoares/:id",
+      "handler": "Culoare.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/culoares/:id",
+      "handler": "Culoare.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/actionares",
+      "handler": "Actionare.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actionares/count",
+      "handler": "Actionare.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/actionares/:id",
+      "handler": "Actionare.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/actionares",
+      "handler": "Actionare.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/actionares/:id",
+      "handler": "Actionare.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/actionares/:id",
+      "handler": "Actionare.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

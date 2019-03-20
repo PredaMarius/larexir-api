@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/firmas",
+      "handler": "Firma.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/firmas/count",
+      "handler": "Firma.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/firmas/:id",
+      "handler": "Firma.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/firmas",
+      "handler": "Firma.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/firmas/:id",
+      "handler": "Firma.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/firmas/:id",
+      "handler": "Firma.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

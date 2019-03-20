@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "curs",
+  "info": {
+    "name": "curs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "dataCurs": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "cursValuta": {
+      "default": 0,
+      "type": "decimal"
+    },
+    "valuta": {
+      "default": "EURO",
+      "type": "string",
+      "required": true
+    },
+    "procentSuplimentar": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}
