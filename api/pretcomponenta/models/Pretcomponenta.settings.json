@@ -16,24 +16,9 @@
       "type": "string",
       "required": true
     },
-    "idProdus": {
-      "default": "",
-      "type": "integer",
-      "required": true
-    },
     "componenta": {
       "default": "",
       "type": "string",
-      "required": true
-    },
-    "idComponenta": {
-      "default": "",
-      "type": "integer",
-      "required": true
-    },
-    "key": {
-      "default": "",
-      "type": "integer",
       "required": true
     },
     "pret": {
@@ -47,6 +32,24 @@
     "valuta": {
       "default": "",
       "type": "string"
+    },
+    "tipSubprodus": {
+      "collection": "produs",
+      "dominant": true,
+      "via": "pretcomponentas"
+    },
+    "idComponenta": {
+      "collection": "culoare",
+      "via": "pretcomponentas",
+      "dominant": true
+    },
+    "keyTipProdus": {
+      "default": "",
+      "type": "integer"
+    },
+    "keyComponenta": {
+      "default": "",
+      "type": "integer"
     }
   }
 }

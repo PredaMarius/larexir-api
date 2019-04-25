@@ -50,6 +50,10 @@
     "key": {
       "default": "",
       "type": "integer"
+    },
+    "pretcomponentas": {
+      "collection": "pretcomponenta",
+      "via": "idComponenta"
     }
   }
 }

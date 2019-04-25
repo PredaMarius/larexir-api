@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Compatibilitate` model.
+ * Lifecycle callbacks for the `Pret` model.
  */
 
 module.exports = {

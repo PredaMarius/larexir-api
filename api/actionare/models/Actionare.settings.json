@@ -47,6 +47,15 @@
       "default": "DA",
       "maxLength": 2,
       "type": "string"
+    },
+    "optionaleCompatibileAct": {
+      "collection": "optional",
+      "dominant": true,
+      "via": "actionares"
+    },
+    "produses": {
+      "collection": "produs",
+      "via": "actionariCompatibile"
     }
   }
 }

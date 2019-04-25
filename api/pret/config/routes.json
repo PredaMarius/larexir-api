@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/compatibilitates",
-      "handler": "Compatibilitate.find",
+      "path": "/prets",
+      "handler": "Pret.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/compatibilitates/count",
-      "handler": "Compatibilitate.count",
+      "path": "/prets/count",
+      "handler": "Pret.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/compatibilitates/:id",
-      "handler": "Compatibilitate.findOne",
+      "path": "/prets/:id",
+      "handler": "Pret.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/compatibilitates",
-      "handler": "Compatibilitate.create",
+      "path": "/prets",
+      "handler": "Pret.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/compatibilitates/:id",
-      "handler": "Compatibilitate.update",
+      "path": "/prets/:id",
+      "handler": "Pret.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/compatibilitates/:id",
-      "handler": "Compatibilitate.destroy",
+      "path": "/prets/:id",
+      "handler": "Pret.destroy",
       "config": {
         "policies": []
       }

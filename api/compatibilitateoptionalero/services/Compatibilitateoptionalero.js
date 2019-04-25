@@ -1,8 +1,8 @@
-/* global Compatibilitate */
+/* global Compatibilitateoptionalero */
 'use strict';
 
 /**
- * Compatibilitate.js service
+ * Compatibilitateoptionalero.js service
  *
  * @description: A set of functions similar to controller's actions to avoid code duplication.
  */
@@ -16,20 +16,20 @@ const utils = require('strapi-hook-bookshelf/lib/utils/');
 module.exports = {
 
   /**
-   * Promise to fetch all compatibilitates.
+   * Promise to fetch all compatibilitateoptionaleros.
    *
    * @return {Promise}
    */
 
   fetchAll: (params) => {
     // Convert `params` object to filters compatible with Bookshelf.
-    const filters = strapi.utils.models.convertParams('compatibilitate', params);
+    const filters = strapi.utils.models.convertParams('compatibilitateoptionalero', params);
     // Select field to populate.
-    const populate = Compatibilitate.associations
+    const populate = Compatibilitateoptionalero.associations
       .filter(ast => ast.autoPopulate !== false)
       .map(ast => ast.alias);
 
-    return Compatibilitate.query(function(qb) {
+    return Compatibilitateoptionalero.query(function(qb) {
       _.forEach(filters.where, (where, key) => {
         if (_.isArray(where.value) && where.symbol !== 'IN' && where.symbol !== 'NOT IN') {
           for (const value in where.value) {
@@ -52,33 +52,33 @@ module.exports = {
   },
 
   /**
-   * Promise to fetch a/an compatibilitate.
+   * Promise to fetch a/an compatibilitateoptionalero.
    *
    * @return {Promise}
    */
 
   fetch: (params) => {
     // Select field to populate.
-    const populate = Compatibilitate.associations
+    const populate = Compatibilitateoptionalero.associations
       .filter(ast => ast.autoPopulate !== false)
       .map(ast => ast.alias);
 
-    return Compatibilitate.forge(_.pick(params, 'id')).fetch({
+    return Compatibilitateoptionalero.forge(_.pick(params, 'id')).fetch({
       withRelated: populate
     });
   },
 
   /**
-   * Promise to count a/an compatibilitate.
+   * Promise to count a/an compatibilitateoptionalero.
    *
    * @return {Promise}
    */
 
   count: (params) => {
     // Convert `params` object to filters compatible with Bookshelf.
-    const filters = strapi.utils.models.convertParams('compatibilitate', params);
+    const filters = strapi.utils.models.convertParams('compatibilitateoptionalero', params);
 
-    return Compatibilitate.query(function(qb) {
+    return Compatibilitateoptionalero.query(function(qb) {
       _.forEach(filters.where, (where, key) => {
         if (_.isArray(where.value)) {
           for (const value in where.value) {
@@ -92,50 +92,50 @@ module.exports = {
   },
 
   /**
-   * Promise to add a/an compatibilitate.
+   * Promise to add a/an compatibilitateoptionalero.
    *
    * @return {Promise}
    */
 
   add: async (values) => {
     // Extract values related to relational data.
-    const relations = _.pick(values, Compatibilitate.associations.map(ast => ast.alias));
-    const data = _.omit(values, Compatibilitate.associations.map(ast => ast.alias));
+    const relations = _.pick(values, Compatibilitateoptionalero.associations.map(ast => ast.alias));
+    const data = _.omit(values, Compatibilitateoptionalero.associations.map(ast => ast.alias));
 
     // Create entry with no-relational data.
-    const entry = await Compatibilitate.forge(data).save();
+    const entry = await Compatibilitateoptionalero.forge(data).save();
 
     // Create relational data and return the entry.
-    return Compatibilitate.updateRelations({ id: entry.id , values: relations });
+    return Compatibilitateoptionalero.updateRelations({ id: entry.id , values: relations });
   },
 
   /**
-   * Promise to edit a/an compatibilitate.
+   * Promise to edit a/an compatibilitateoptionalero.
    *
    * @return {Promise}
    */
 
   edit: async (params, values) => {
     // Extract values related to relational data.
-    const relations = _.pick(values, Compatibilitate.associations.map(ast => ast.alias));
-    const data = _.omit(values, Compatibilitate.associations.map(ast => ast.alias));
+    const relations = _.pick(values, Compatibilitateoptionalero.associations.map(ast => ast.alias));
+    const data = _.omit(values, Compatibilitateoptionalero.associations.map(ast => ast.alias));
 
     // Create entry with no-relational data.
-    const entry = Compatibilitate.forge(params).save(data);
+    const entry = Compatibilitateoptionalero.forge(params).save(data);
 
     // Create relational data and return the entry.
-    return Compatibilitate.updateRelations(Object.assign(params, { values: relations }));
+    return Compatibilitateoptionalero.updateRelations(Object.assign(params, { values: relations }));
   },
 
   /**
-   * Promise to remove a/an compatibilitate.
+   * Promise to remove a/an compatibilitateoptionalero.
    *
    * @return {Promise}
    */
 
   remove: async (params) => {
     params.values = {};
-    Compatibilitate.associations.map(association => {
+    Compatibilitateoptionalero.associations.map(association => {
       switch (association.nature) {
         case 'oneWay':
         case 'oneToOne':
@@ -152,45 +152,45 @@ module.exports = {
       }
     });
 
-    await Compatibilitate.updateRelations(params);
+    await Compatibilitateoptionalero.updateRelations(params);
 
-    return Compatibilitate.forge(params).destroy();
+    return Compatibilitateoptionalero.forge(params).destroy();
   },
 
   /**
-   * Promise to search a/an compatibilitate.
+   * Promise to search a/an compatibilitateoptionalero.
    *
    * @return {Promise}
    */
 
   search: async (params) => {
     // Convert `params` object to filters compatible with Bookshelf.
-    const filters = strapi.utils.models.convertParams('compatibilitate', params);
+    const filters = strapi.utils.models.convertParams('compatibilitateoptionalero', params);
     // Select field to populate.
-    const populate = Compatibilitate.associations
+    const populate = Compatibilitateoptionalero.associations
       .filter(ast => ast.autoPopulate !== false)
       .map(ast => ast.alias);
 
-    const associations = Compatibilitate.associations.map(x => x.alias);
-    const searchText = Object.keys(Compatibilitate._attributes)
-      .filter(attribute => attribute !== Compatibilitate.primaryKey && !associations.includes(attribute))
-      .filter(attribute => ['string', 'text'].includes(Compatibilitate._attributes[attribute].type));
+    const associations = Compatibilitateoptionalero.associations.map(x => x.alias);
+    const searchText = Object.keys(Compatibilitateoptionalero._attributes)
+      .filter(attribute => attribute !== Compatibilitateoptionalero.primaryKey && !associations.includes(attribute))
+      .filter(attribute => ['string', 'text'].includes(Compatibilitateoptionalero._attributes[attribute].type));
 
-    const searchNoText = Object.keys(Compatibilitate._attributes)
-      .filter(attribute => attribute !== Compatibilitate.primaryKey && !associations.includes(attribute))
-      .filter(attribute => !['string', 'text', 'boolean', 'integer', 'decimal', 'float'].includes(Compatibilitate._attributes[attribute].type));
+    const searchNoText = Object.keys(Compatibilitateoptionalero._attributes)
+      .filter(attribute => attribute !== Compatibilitateoptionalero.primaryKey && !associations.includes(attribute))
+      .filter(attribute => !['string', 'text', 'boolean', 'integer', 'decimal', 'float'].includes(Compatibilitateoptionalero._attributes[attribute].type));
 
-    const searchInt = Object.keys(Compatibilitate._attributes)
-      .filter(attribute => attribute !== Compatibilitate.primaryKey && !associations.includes(attribute))
-      .filter(attribute => ['integer', 'decimal', 'float'].includes(Compatibilitate._attributes[attribute].type));
+    const searchInt = Object.keys(Compatibilitateoptionalero._attributes)
+      .filter(attribute => attribute !== Compatibilitateoptionalero.primaryKey && !associations.includes(attribute))
+      .filter(attribute => ['integer', 'decimal', 'float'].includes(Compatibilitateoptionalero._attributes[attribute].type));
 
-    const searchBool = Object.keys(Compatibilitate._attributes)
-      .filter(attribute => attribute !== Compatibilitate.primaryKey && !associations.includes(attribute))
-      .filter(attribute => ['boolean'].includes(Compatibilitate._attributes[attribute].type));
+    const searchBool = Object.keys(Compatibilitateoptionalero._attributes)
+      .filter(attribute => attribute !== Compatibilitateoptionalero.primaryKey && !associations.includes(attribute))
+      .filter(attribute => ['boolean'].includes(Compatibilitateoptionalero._attributes[attribute].type));
 
     const query = (params._q || '').replace(/[^a-zA-Z0-9.-\s]+/g, '');
 
-    return Compatibilitate.query(qb => {
+    return Compatibilitateoptionalero.query(qb => {
       // Search in columns which are not text value.
       searchNoText.forEach(attribute => {
         qb.orWhereRaw(`LOWER(${attribute}) LIKE '%${_.toLower(query)}%'`);
@@ -209,7 +209,7 @@ module.exports = {
       }
 
       // Search in columns with text using index.
-      switch (Compatibilitate.client) {
+      switch (Compatibilitateoptionalero.client) {
         case 'mysql':
           qb.orWhereRaw(`MATCH(${searchText.join(',')}) AGAINST(? IN BOOLEAN MODE)`, `*${query}*`);
           break;

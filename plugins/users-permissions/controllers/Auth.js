@@ -51,7 +51,7 @@ module.exports = {
       }
 
       // Check if the user exists.
-      const user = await strapi.query('user', 'users-permissions').findOne(query, ['role']);
+      const user = await strapi.query('user', 'users-permissions').findOne(query);
 
       if (!user) {
         return ctx.badRequest(null, ctx.request.admin ? [{ messages: [{ id: 'Auth.form.error.invalid' }] }] : 'Identifier or password invalid.');

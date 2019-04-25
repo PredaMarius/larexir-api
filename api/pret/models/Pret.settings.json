@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "compatibilitates",
+  "collectionName": "prets",
   "info": {
-    "name": "compatibilitate",
+    "name": "pret",
     "description": ""
   },
   "options": {
@@ -13,28 +13,19 @@
   "attributes": {
     "tipProdus": {
       "default": "",
-      "type": "string",
-      "required": true
-    },
-    "componentaMaster": {
-      "default": "",
       "type": "string"
     },
-    "idComponentaMaster": {
+    "tipSubprodus": {
       "default": "",
       "type": "integer"
     },
-    "componentaSlave": {
-      "default": "",
-      "type": "string"
-    },
-    "idComponentaSlave": {
+    "material": {
       "default": "",
       "type": "integer"
     },
-    "ax": {
+    "pret": {
       "default": "",
-      "type": "string"
+      "type": "decimal"
     }
   }
 }

@@ -43,6 +43,10 @@
       "maxLength": 2,
       "type": "string",
       "required": true
+    },
+    "produs": {
+      "model": "produs",
+      "via": "materialeCompatibile"
     }
   }
 }
