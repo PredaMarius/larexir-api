@@ -51,9 +51,13 @@
       "default": "",
       "type": "integer"
     },
-    "pretcomponentas": {
-      "collection": "pretcomponenta",
-      "via": "idComponenta"
+    "produs": {
+      "model": "produs",
+      "via": "culoriCompatibile"
+    },
+    "procentSuplimentar": {
+      "default": "",
+      "type": "integer"
     }
   }
 }

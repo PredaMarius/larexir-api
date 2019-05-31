@@ -43,21 +43,17 @@
       "maxLength": 2,
       "type": "string"
     },
-    "actionares": {
-      "collection": "actionare",
-      "via": "optionaleCompatibileAct"
-    },
     "produses": {
-      "collection": "produs",
+      "model": "produs",
       "via": "optionaleCompatibile"
-    },
-    "compatibilitateoptionalero": {
-      "model": "compatibilitateoptionalero",
-      "via": "idOptional"
     },
     "ax": {
       "default": "",
       "type": "string"
+    },
+    "tipActionare": {
+      "default": "",
+      "type": "integer"
     }
   }
 }

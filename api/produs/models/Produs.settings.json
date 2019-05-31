@@ -53,20 +53,19 @@
     },
     "optionaleCompatibile": {
       "collection": "optional",
-      "via": "produses",
-      "dominant": true
+      "via": "produses"
     },
     "actionariCompatibile": {
       "collection": "actionare",
       "via": "produses",
       "dominant": true
     },
-    "pretcomponentas": {
-      "collection": "pretcomponenta",
-      "via": "tipSubprodus"
-    },
     "materialeCompatibile": {
       "collection": "material",
+      "via": "produs"
+    },
+    "culoriCompatibile": {
+      "collection": "culoare",
       "via": "produs"
     }
   }

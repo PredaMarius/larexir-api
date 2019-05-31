@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "prets",
+  "collectionName": "indicators",
   "info": {
-    "name": "pret",
+    "name": "indicator",
     "description": ""
   },
   "options": {
@@ -11,21 +11,13 @@
     "comment": ""
   },
   "attributes": {
-    "tipProdus": {
+    "indicator": {
       "default": "",
       "type": "string"
     },
-    "tipSubprodus": {
-      "default": "",
+    "Valoare": {
+      "default": 0,
       "type": "integer"
-    },
-    "material": {
-      "default": "",
-      "type": "integer"
-    },
-    "pret": {
-      "default": "",
-      "type": "decimal"
     }
   }
 }

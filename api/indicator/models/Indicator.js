@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Lifecycle callbacks for the `Pret` model.
+ * Lifecycle callbacks for the `Indicator` model.
  */
 
 module.exports = {

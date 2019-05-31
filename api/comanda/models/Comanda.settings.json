@@ -62,6 +62,10 @@
     "comandarepers": {
       "collection": "comandareper",
       "via": "idComanda"
+    },
+    "tipProdus": {
+      "default": "",
+      "type": "string"
     }
   }
 }

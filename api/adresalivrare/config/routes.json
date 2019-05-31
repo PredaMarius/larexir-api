@@ -46,7 +46,7 @@
       "handler": "Adresalivrare.destroy",
       "config": {
         "policies": []
-     }
+      }
     },
     {
       "method": "POST",

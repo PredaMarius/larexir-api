@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/prets",
-      "handler": "Pret.find",
+      "path": "/indicators",
+      "handler": "Indicator.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/prets/count",
-      "handler": "Pret.count",
+      "path": "/indicators/count",
+      "handler": "Indicator.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/prets/:id",
-      "handler": "Pret.findOne",
+      "path": "/indicators/:id",
+      "handler": "Indicator.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/prets",
-      "handler": "Pret.create",
+      "path": "/indicators",
+      "handler": "Indicator.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/prets/:id",
-      "handler": "Pret.update",
+      "path": "/indicators/:id",
+      "handler": "Indicator.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/prets/:id",
-      "handler": "Pret.destroy",
+      "path": "/indicators/:id",
+      "handler": "Indicator.destroy",
       "config": {
         "policies": []
       }
