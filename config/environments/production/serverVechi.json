@@ -3,10 +3,7 @@
   "port": "${process.env.PORT || 1337}",
   "production": true,
   "proxy": {
-    "enabled": true,
-    "host": "softdivision.net",
-    "port": 443,
-    "ssl": true
+    "enabled": false
   },
   "autoReload": {
     "enabled": false
@@ -15,7 +12,6 @@
     "enabled": false
   },
   "admin": {
-    "autoOpen": false,
-    "path": "/admin"
+    "autoOpen": false
   }
 }

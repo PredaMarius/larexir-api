@@ -1,6 +1,6 @@
 {
   "connection": "default",
-  "collectionName": "comanda",
+  "collectionName": "comandas",
   "info": {
     "name": "comanda",
     "description": ""
@@ -62,6 +62,10 @@
     "comandarepers": {
       "collection": "comandareper",
       "via": "idComanda"
+    },
+    "tipProdus": {
+      "default": "",
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "indicators",
+  "info": {
+    "name": "indicator",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "indicator": {
+      "default": "",
+      "type": "string"
+    },
+    "Valoare": {
+      "default": 0,
+      "type": "integer"
+    }
+  }
+}

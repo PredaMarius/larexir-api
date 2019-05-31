@@ -50,6 +50,23 @@
       "default": "DA",
       "maxLength": 2,
       "type": "string"
+    },
+    "optionaleCompatibile": {
+      "collection": "optional",
+      "via": "produses"
+    },
+    "actionariCompatibile": {
+      "collection": "actionare",
+      "via": "produses",
+      "dominant": true
+    },
+    "materialeCompatibile": {
+      "collection": "material",
+      "via": "produs"
+    },
+    "culoriCompatibile": {
+      "collection": "culoare",
+      "via": "produs"
     }
   }
 }

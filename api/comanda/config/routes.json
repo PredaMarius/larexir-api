@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+   { 
+      "method": "POST",
+      "path": "/comandas/delete/:id",
+      "handler": "Comanda.destroy",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

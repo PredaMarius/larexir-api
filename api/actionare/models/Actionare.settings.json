@@ -47,6 +47,10 @@
       "default": "DA",
       "maxLength": 2,
       "type": "string"
+    },
+    "produses": {
+      "model": "produs",
+      "via": "actionariCompatibile"
     }
   }
 }

@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+  {
+      "method": "POST",
+      "path": "/comandarepers/delete/:id",
+      "handler": "Comandareper.destroy",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

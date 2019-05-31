@@ -136,6 +136,42 @@
       "default": "",
       "type": "string",
       "required": true
+    },
+    "denumireProdus": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireSubProdus": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireCuloareLamela": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireCuloareCaseta": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireMaterial": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireTipActionare": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireOptional1": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireOptional2": {
+      "default": "",
+      "type": "string"
+    },
+    "denumireOptional3": {
+      "default": "",
+      "type": "string"
     }
   }
 }

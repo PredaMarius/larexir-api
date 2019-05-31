@@ -42,6 +42,18 @@
       "default": "DA",
       "maxLength": 2,
       "type": "string"
+    },
+    "produses": {
+      "model": "produs",
+      "via": "optionaleCompatibile"
+    },
+    "ax": {
+      "default": "",
+      "type": "string"
+    },
+    "tipActionare": {
+      "default": "",
+      "type": "integer"
     }
   }
 }

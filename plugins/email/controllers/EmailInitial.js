@@ -30,17 +30,10 @@ module.exports = {
 
     let options = ctx.request.body;
 
-    await strapi.plugins['email'].services.email.send({
-  to: ctx.request.body.to,
-  from: 'robbot@strapi.io',
-  replyTo: ctx.request.body.replayTo, //'no-reply@strapi.io'
-  subject: ctx.request.body.subject,
-  text: ctx.request.body.text,
-  html: ctx.request.body.html
-});
+    await strapi.plugins.email.services.email.send(options, config);
 
     // Send 200 `ok`
-    ctx.send({"raspuns":"OK"});
+    ctx.send({});
   },
 
   getEnvironments: async (ctx) => {

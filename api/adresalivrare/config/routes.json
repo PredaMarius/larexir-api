@@ -47,6 +47,14 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "POST",
+      "path": "/adresalivrares/delete/:id",
+      "handler": "Adresalivrare.destroy",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

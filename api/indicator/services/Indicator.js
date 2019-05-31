@@ -1,8 +1,8 @@
-/* global Pretcomponenta */
+/* global Indicator */
 'use strict';
 
 /**
- * Pretcomponenta.js service
+ * Indicator.js service
  *
  * @description: A set of functions similar to controller's actions to avoid code duplication.
  */
@@ -16,20 +16,20 @@ const utils = require('strapi-hook-bookshelf/lib/utils/');
 module.exports = {
 
   /**
-   * Promise to fetch all pretcomponentas.
+   * Promise to fetch all indicators.
    *
    * @return {Promise}
    */
 
   fetchAll: (params) => {
     // Convert `params` object to filters compatible with Bookshelf.
-    const filters = strapi.utils.models.convertParams('pretcomponenta', params);
+    const filters = strapi.utils.models.convertParams('indicator', params);
     // Select field to populate.
-    const populate = Pretcomponenta.associations
+    const populate = Indicator.associations
       .filter(ast => ast.autoPopulate !== false)
       .map(ast => ast.alias);
 
-    return Pretcomponenta.query(function(qb) {
+    return Indicator.query(function(qb) {
       _.forEach(filters.where, (where, key) => {
         if (_.isArray(where.value) && where.symbol !== 'IN' && where.symbol !== 'NOT IN') {
           for (const value in where.value) {
@@ -52,33 +52,33 @@ module.exports = {
   },
 
   /**
-   * Promise to fetch a/an pretcomponenta.
+   * Promise to fetch a/an indicator.
    *
    * @return {Promise}
    */
 
   fetch: (params) => {
     // Select field to populate.
-    const populate = Pretcomponenta.associations
+    const populate = Indicator.associations
       .filter(ast => ast.autoPopulate !== false)
       .map(ast => ast.alias);
 
-    return Pretcomponenta.forge(_.pick(params, 'id')).fetch({
+    return Indicator.forge(_.pick(params, 'id')).fetch({
       withRelated: populate
     });
   },
 
   /**
-   * Promise to count a/an pretcomponenta.
+   * Promise to count a/an indicator.
    *
    * @return {Promise}
    */
 
   count: (params) => {
     // Convert `params` object to filters compatible with Bookshelf.
-    const filters = strapi.utils.models.convertParams('pretcomponenta', params);
+    const filters = strapi.utils.models.convertParams('indicator', params);
 
-    return Pretcomponenta.query(function(qb) {
+    return Indicator.query(function(qb) {
       _.forEach(filters.where, (where, key) => {
         if (_.isArray(where.value)) {
           for (const value in where.value) {
@@ -92,50 +92,50 @@ module.exports = {
   },
 
   /**
-   * Promise to add a/an pretcomponenta.
+   * Promise to add a/an indicator.
    *
    * @return {Promise}
    */
 
   add: async (values) => {
     // Extract values related to relational data.
-    const relations = _.pick(values, Pretcomponenta.associations.map(ast => ast.alias));
-    const data = _.omit(values, Pretcomponenta.associations.map(ast => ast.alias));
+    const relations = _.pick(values, Indicator.associations.map(ast => ast.alias));
+    const data = _.omit(values, Indicator.associations.map(ast => ast.alias));
 
     // Create entry with no-relational data.
-    const entry = await Pretcomponenta.forge(data).save();
+    const entry = await Indicator.forge(data).save();
 
     // Create relational data and return the entry.
-    return Pretcomponenta.updateRelations({ id: entry.id , values: relations });
+    return Indicator.updateRelations({ id: entry.id , values: relations });
   },
 
   /**
-   * Promise to edit a/an pretcomponenta.
+   * Promise to edit a/an indicator.
    *
    * @return {Promise}
    */
 
   edit: async (params, values) => {
     // Extract values related to relational data.
-    const relations = _.pick(values, Pretcomponenta.associations.map(ast => ast.alias));
-    const data = _.omit(values, Pretcomponenta.associations.map(ast => ast.alias));
+    const relations = _.pick(values, Indicator.associations.map(ast => ast.alias));
+    const data = _.omit(values, Indicator.associations.map(ast => ast.alias));
 
     // Create entry with no-relational data.
-    const entry = Pretcomponenta.forge(params).save(data);
+    const entry = Indicator.forge(params).save(data);
 
     // Create relational data and return the entry.
-    return Pretcomponenta.updateRelations(Object.assign(params, { values: relations }));
+    return Indicator.updateRelations(Object.assign(params, { values: relations }));
   },
 
   /**
-   * Promise to remove a/an pretcomponenta.
+   * Promise to remove a/an indicator.
    *
    * @return {Promise}
    */
 
   remove: async (params) => {
     params.values = {};
-    Pretcomponenta.associations.map(association => {
+    Indicator.associations.map(association => {
       switch (association.nature) {
         case 'oneWay':
         case 'oneToOne':
@@ -152,45 +152,45 @@ module.exports = {
       }
     });
 
-    await Pretcomponenta.updateRelations(params);
+    await Indicator.updateRelations(params);
 
-    return Pretcomponenta.forge(params).destroy();
+    return Indicator.forge(params).destroy();
   },
 
   /**
-   * Promise to search a/an pretcomponenta.
+   * Promise to search a/an indicator.
    *
    * @return {Promise}
    */
 
   search: async (params) => {
     // Convert `params` object to filters compatible with Bookshelf.
-    const filters = strapi.utils.models.convertParams('pretcomponenta', params);
+    const filters = strapi.utils.models.convertParams('indicator', params);
     // Select field to populate.
-    const populate = Pretcomponenta.associations
+    const populate = Indicator.associations
       .filter(ast => ast.autoPopulate !== false)
       .map(ast => ast.alias);
 
-    const associations = Pretcomponenta.associations.map(x => x.alias);
-    const searchText = Object.keys(Pretcomponenta._attributes)
-      .filter(attribute => attribute !== Pretcomponenta.primaryKey && !associations.includes(attribute))
-      .filter(attribute => ['string', 'text'].includes(Pretcomponenta._attributes[attribute].type));
+    const associations = Indicator.associations.map(x => x.alias);
+    const searchText = Object.keys(Indicator._attributes)
+      .filter(attribute => attribute !== Indicator.primaryKey && !associations.includes(attribute))
+      .filter(attribute => ['string', 'text'].includes(Indicator._attributes[attribute].type));
 
-    const searchNoText = Object.keys(Pretcomponenta._attributes)
-      .filter(attribute => attribute !== Pretcomponenta.primaryKey && !associations.includes(attribute))
-      .filter(attribute => !['string', 'text', 'boolean', 'integer', 'decimal', 'float'].includes(Pretcomponenta._attributes[attribute].type));
+    const searchNoText = Object.keys(Indicator._attributes)
+      .filter(attribute => attribute !== Indicator.primaryKey && !associations.includes(attribute))
+      .filter(attribute => !['string', 'text', 'boolean', 'integer', 'decimal', 'float'].includes(Indicator._attributes[attribute].type));
 
-    const searchInt = Object.keys(Pretcomponenta._attributes)
-      .filter(attribute => attribute !== Pretcomponenta.primaryKey && !associations.includes(attribute))
-      .filter(attribute => ['integer', 'decimal', 'float'].includes(Pretcomponenta._attributes[attribute].type));
+    const searchInt = Object.keys(Indicator._attributes)
+      .filter(attribute => attribute !== Indicator.primaryKey && !associations.includes(attribute))
+      .filter(attribute => ['integer', 'decimal', 'float'].includes(Indicator._attributes[attribute].type));
 
-    const searchBool = Object.keys(Pretcomponenta._attributes)
-      .filter(attribute => attribute !== Pretcomponenta.primaryKey && !associations.includes(attribute))
-      .filter(attribute => ['boolean'].includes(Pretcomponenta._attributes[attribute].type));
+    const searchBool = Object.keys(Indicator._attributes)
+      .filter(attribute => attribute !== Indicator.primaryKey && !associations.includes(attribute))
+      .filter(attribute => ['boolean'].includes(Indicator._attributes[attribute].type));
 
     const query = (params._q || '').replace(/[^a-zA-Z0-9.-\s]+/g, '');
 
-    return Pretcomponenta.query(qb => {
+    return Indicator.query(qb => {
       // Search in columns which are not text value.
       searchNoText.forEach(attribute => {
         qb.orWhereRaw(`LOWER(${attribute}) LIKE '%${_.toLower(query)}%'`);
@@ -209,7 +209,7 @@ module.exports = {
       }
 
       // Search in columns with text using index.
-      switch (Pretcomponenta.client) {
+      switch (Indicator.client) {
         case 'mysql':
           qb.orWhereRaw(`MATCH(${searchText.join(',')}) AGAINST(? IN BOOLEAN MODE)`, `*${query}*`);
           break;

@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/pretcomponentas",
-      "handler": "Pretcomponenta.find",
+      "path": "/indicators",
+      "handler": "Indicator.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/pretcomponentas/count",
-      "handler": "Pretcomponenta.count",
+      "path": "/indicators/count",
+      "handler": "Indicator.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/pretcomponentas/:id",
-      "handler": "Pretcomponenta.findOne",
+      "path": "/indicators/:id",
+      "handler": "Indicator.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/pretcomponentas",
-      "handler": "Pretcomponenta.create",
+      "path": "/indicators",
+      "handler": "Indicator.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/pretcomponentas/:id",
-      "handler": "Pretcomponenta.update",
+      "path": "/indicators/:id",
+      "handler": "Indicator.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/pretcomponentas/:id",
-      "handler": "Pretcomponenta.destroy",
+      "path": "/indicators/:id",
+      "handler": "Indicator.destroy",
       "config": {
         "policies": []
       }

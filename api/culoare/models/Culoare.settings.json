@@ -50,6 +50,14 @@
     "key": {
       "default": "",
       "type": "integer"
+    },
+    "produs": {
+      "model": "produs",
+      "via": "culoriCompatibile"
+    },
+    "procentSuplimentar": {
+      "default": "",
+      "type": "integer"
     }
   }
 }
