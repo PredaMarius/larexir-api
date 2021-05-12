@@ -23,7 +23,7 @@
     "lodash": "^4.17.5",
     "mysql": "2.16.0",
     "node": "^10.15.3",
-    "strapi": "3.0.0-alpha.24.1",
+    "strapi": "3.2.5",
     "strapi-hook-bookshelf": "3.0.0-alpha.24.1",
     "strapi-hook-knex": "3.0.0-alpha.24.1"
   },
