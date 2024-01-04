@@ -1,5 +1,5 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "materials",
   "info": {
     "name": "material",
@@ -8,45 +8,51 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "tipProdus": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "key": {
-      "default": "",
       "type": "integer",
       "required": true
     },
     "denumire": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "pret": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "atentionare": {
-      "default": "",
       "type": "string"
     },
     "tipMaterial": {
-      "default": "",
       "type": "string"
     },
     "activ": {
-      "default": "DA",
-      "maxLength": 2,
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "DA",
+      "maxLength": 2
     },
     "produs": {
-      "model": "produs",
-      "via": "materialeCompatibile"
+      "via": "materialeCompatibile",
+      "model": "produs"
+    },
+    "coduris": {
+      "via": "material",
+      "collection": "coduri"
+    },
+    "pozitieLista": {
+      "type": "integer"
+    },
+    "subTip": {
+      "type": "string"
     }
   }
 }

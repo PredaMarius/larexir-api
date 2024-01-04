@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/actionares",
-      "handler": "Actionare.find",
+      "handler": "actionare.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/actionares/count",
-      "handler": "Actionare.count",
+      "handler": "actionare.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/actionares/:id",
-      "handler": "Actionare.findOne",
+      "handler": "actionare.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/actionares",
-      "handler": "Actionare.create",
+      "handler": "actionare.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/actionares/:id",
-      "handler": "Actionare.update",
+      "handler": "actionare.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/actionares/:id",
-      "handler": "Actionare.destroy",
+      "handler": "actionare.delete",
       "config": {
         "policies": []
       }

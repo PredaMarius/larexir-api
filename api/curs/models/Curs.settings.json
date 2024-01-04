@@ -1,33 +1,32 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "curs",
   "info": {
-    "name": "curs",
-    "description": ""
+    "name": "curs"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "dataCurs": {
-      "default": "",
       "type": "date",
       "required": true
     },
     "cursValuta": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "valuta": {
-      "default": "EURO",
       "type": "string",
+      "default": "EURO",
       "required": true
     },
     "procentSuplimentar": {
-      "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     }
   }
 }

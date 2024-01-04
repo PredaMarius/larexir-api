@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/produses",
-      "handler": "Produs.find",
+      "handler": "produs.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/produses/count",
-      "handler": "Produs.count",
+      "handler": "produs.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/produses/:id",
-      "handler": "Produs.findOne",
+      "handler": "produs.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/produses",
-      "handler": "Produs.create",
+      "handler": "produs.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/produses/:id",
-      "handler": "Produs.update",
+      "handler": "produs.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/produses/:id",
-      "handler": "Produs.destroy",
+      "handler": "produs.delete",
       "config": {
         "policies": []
       }

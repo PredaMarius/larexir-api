@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "informares",
+  "info": {
+    "name": "informare"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "mesaj1": {
+      "type": "string"
+    },
+    "Mesaj2": {
+      "type": "string"
+    },
+    "Mesaj3": {
+      "type": "string"
+    },
+    "Mesaj4": {
+      "type": "string"
+    },
+    "Mesaj5": {
+      "type": "string"
+    },
+    "Imagine": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

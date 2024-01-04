@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/indicators",
-      "handler": "Indicator.find",
+      "handler": "indicator.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/indicators/count",
-      "handler": "Indicator.count",
+      "handler": "indicator.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/indicators/:id",
-      "handler": "Indicator.findOne",
+      "handler": "indicator.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/indicators",
-      "handler": "Indicator.create",
+      "handler": "indicator.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/indicators/:id",
-      "handler": "Indicator.update",
+      "handler": "indicator.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/indicators/:id",
-      "handler": "Indicator.destroy",
+      "handler": "indicator.delete",
       "config": {
         "policies": []
       }

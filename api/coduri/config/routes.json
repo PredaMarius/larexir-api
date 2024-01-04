@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/coduris",
+      "handler": "coduri.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coduris/count",
+      "handler": "coduri.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/coduris/:id",
+      "handler": "coduri.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/coduris",
+      "handler": "coduri.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/coduris/:id",
+      "handler": "coduri.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/coduris/:id",
+      "handler": "coduri.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

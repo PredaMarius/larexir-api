@@ -2,50 +2,38 @@
   "name": "larexir-api",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application.",
-  "main": "./server.js",
+  "description": "A Strapi application",
   "scripts": {
-    "setup": "cd admin && npm run setup",
-    "start": "NODE_ENV=production node server.js",
-    "strapi": "node_modules/strapi/bin/strapi.js",
-    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
-    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
   },
-  "devDependencies": {
-    "babel-eslint": "^7.1.1",
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.11.0",
-    "eslint-plugin-react": "^7.7.0"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "knex": "latest",
-    "lodash": "^4.17.5",
-    "mysql": "2.16.0",
-    "node": "^10.15.3",
-    "strapi": "3.0.0-alpha.24.1",
-    "strapi-hook-bookshelf": "3.0.0-alpha.24.1",
-    "strapi-hook-knex": "3.0.0-alpha.24.1"
+    "knex": "0.21.18",
+    "mysql": "2.18.1",
+    "strapi": "3.6.9",
+    "strapi-admin": "3.6.9",
+    "strapi-connector-bookshelf": "3.6.9",
+    "strapi-plugin-content-manager": "3.6.9",
+    "strapi-plugin-content-type-builder": "3.6.9",
+    "strapi-plugin-email": "3.6.9",
+    "strapi-plugin-i18n": "3.6.9",
+    "strapi-plugin-upload": "3.6.9",
+    "strapi-plugin-users-permissions": "3.6.9",
+    "strapi-provider-email-resend": "^1.0.4",
+    "strapi-utils": "3.6.9"
   },
   "author": {
-    "name": "root",
-    "email": "",
-    "url": ""
+    "name": "A Strapi developer"
   },
-  "maintainers": [
-    {
-      "name": "root",
-      "email": "",
-      "url": ""
-    }
-  ],
   "strapi": {
-    "packageManager": "npm",
-    "uuid": "5d4dbdea-3677-4c71-9008-d7c8fe994237"
+    "uuid": "018ace70-9075-4c21-b6e2-5b87e4ee9134"
   },
   "engines": {
-    "node": ">= 10.0.0",
-    "npm": ">= 6.0.0"
+    "node": ">=10.16.0 <=14.x.x",
+    "npm": "^6.0.0"
   },
   "license": "MIT"
 }

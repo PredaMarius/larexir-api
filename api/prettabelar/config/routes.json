@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/prettabelars",
-      "handler": "Prettabelar.find",
+      "handler": "prettabelar.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/prettabelars/count",
-      "handler": "Prettabelar.count",
+      "handler": "prettabelar.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/prettabelars/:id",
-      "handler": "Prettabelar.findOne",
+      "handler": "prettabelar.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/prettabelars",
-      "handler": "Prettabelar.create",
+      "handler": "prettabelar.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/prettabelars/:id",
-      "handler": "Prettabelar.update",
+      "handler": "prettabelar.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/prettabelars/:id",
-      "handler": "Prettabelar.destroy",
+      "handler": "prettabelar.delete",
       "config": {
         "policies": []
       }

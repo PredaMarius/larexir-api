@@ -1,23 +1,22 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "indicators",
   "info": {
-    "name": "indicator",
-    "description": ""
+    "name": "indicator"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "indicator": {
-      "default": "",
       "type": "string"
     },
     "Valoare": {
-      "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     }
   }
 }

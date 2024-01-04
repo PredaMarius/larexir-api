@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/curs",
-      "handler": "Curs.find",
+      "handler": "curs.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/curs/count",
-      "handler": "Curs.count",
+      "handler": "curs.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/curs/:id",
-      "handler": "Curs.findOne",
+      "handler": "curs.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/curs",
-      "handler": "Curs.create",
+      "handler": "curs.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/curs/:id",
-      "handler": "Curs.update",
+      "handler": "curs.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/curs/:id",
-      "handler": "Curs.destroy",
+      "handler": "curs.delete",
       "config": {
         "policies": []
       }

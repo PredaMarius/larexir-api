@@ -1,5 +1,5 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "comandarepers",
   "info": {
     "name": "comandareper",
@@ -8,169 +8,218 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "idComanda": {
-      "model": "comanda",
-      "via": "comandarepers"
+      "via": "comandarepers",
+      "model": "comanda"
     },
     "nrCrt": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "tipSubprodus": {
-      "default": "",
       "type": "integer",
+      "default": 0,
       "required": true
     },
     "lungime": {
-      "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "lungimeFinala": {
-      "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "inaltime": {
       "default": 0,
       "type": "integer"
     },
     "inaltimeFinala": {
-      "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "deschidere": {
-      "default": "",
       "type": "string"
     },
     "culoareLamela": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "culoareCaseta": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "material": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "codMaterial": {
-      "default": "",
-      "type": "string"
+      "type": "string",
+      "default": "0"
     },
     "lungimeSnur": {
       "default": 0,
       "type": "integer"
     },
     "actionare": {
-      "default": "",
-      "type": "string"
+      "type": "string",
+      "default": "0"
     },
     "tipActionare": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "actionareStDr": {
-      "default": "",
-      "maxLength": 2,
       "type": "string"
     },
     "ax": {
-      "default": "",
-      "maxLength": 45,
-      "type": "string"
+      "type": "string",
+      "maxLength": 45
     },
     "culoareComponente": {
-      "default": "",
       "type": "string"
     },
     "optional1": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "optional2": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "optional3": {
-      "default": "",
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "console": {
-      "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "buc": {
-      "default": 1,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "mp": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "pretCatalog": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "pretCuDiscount": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "pretClientFinal": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "observatii": {
-      "default": "",
       "type": "string"
     },
     "fotografii": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
       "plugin": "upload",
-      "required": false
+      "required": false,
+      "pluginOptions": {}
     },
     "tipProdus": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "denumireProdus": {
-      "default": "",
       "type": "string"
     },
     "denumireSubProdus": {
-      "default": "",
       "type": "string"
     },
     "denumireCuloareLamela": {
-      "default": "",
       "type": "string"
     },
     "denumireCuloareCaseta": {
-      "default": "",
       "type": "string"
     },
     "denumireMaterial": {
-      "default": "",
       "type": "string"
     },
     "denumireTipActionare": {
-      "default": "",
       "type": "string"
     },
     "denumireOptional1": {
-      "default": "",
-      "type": "string"
+      "type": "string",
+      "default": "0"
     },
     "denumireOptional2": {
-      "default": "",
       "type": "string"
     },
     "denumireOptional3": {
-      "default": "",
+      "type": "string"
+    },
+    "idCod": {
+      "type": "integer",
+      "default": 0
+    },
+    "NrLam": {
+      "type": "integer",
+      "default": 0
+    },
+    "material2": {
+      "type": "integer",
+      "default": 0
+    },
+    "idCod2": {
+      "type": "integer",
+      "default": 0
+    },
+    "NrLam2": {
+      "type": "integer",
+      "default": 0
+    },
+    "material3": {
+      "type": "integer",
+      "default": 0
+    },
+    "idCod3": {
+      "type": "integer",
+      "default": 0
+    },
+    "TipConsole": {
+      "type": "integer",
+      "default": 0
+    },
+    "denumireMaterial2": {
+      "type": "string"
+    },
+    "denumireMaterial3": {
+      "type": "string"
+    },
+    "denumireCod": {
+      "type": "string"
+    },
+    "denumireCod2": {
+      "type": "string"
+    },
+    "denumireCod3": {
+      "type": "string"
+    },
+    "denumireConsole": {
+      "type": "string"
+    },
+    "NrLam3": {
+      "type": "integer",
+      "default": 0
+    },
+    "subTip": {
       "type": "string"
     }
   }

@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/optionals",
-      "handler": "Optional.find",
+      "handler": "optional.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/optionals/count",
-      "handler": "Optional.count",
+      "handler": "optional.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/optionals/:id",
-      "handler": "Optional.findOne",
+      "handler": "optional.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/optionals",
-      "handler": "Optional.create",
+      "handler": "optional.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/optionals/:id",
-      "handler": "Optional.update",
+      "handler": "optional.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/optionals/:id",
-      "handler": "Optional.destroy",
+      "handler": "optional.delete",
       "config": {
         "policies": []
       }

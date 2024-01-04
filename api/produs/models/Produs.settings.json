@@ -1,5 +1,5 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "produses",
   "info": {
     "name": "produs",
@@ -8,65 +8,64 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "tipProdus": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "key": {
-      "default": "",
       "type": "integer",
       "required": true
     },
     "denumire": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "atentionare": {
-      "default": "",
       "type": "string"
     },
     "coteFinale": {
-      "default": "",
       "type": "string"
     },
     "cotePanza": {
-      "default": "",
       "type": "string"
     },
     "pretMP": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "dimLamela": {
-      "default": "",
       "type": "integer"
     },
     "activ": {
+      "type": "string",
       "default": "DA",
-      "maxLength": 2,
-      "type": "string"
+      "maxLength": 2
     },
     "optionaleCompatibile": {
-      "collection": "optional",
-      "via": "produses"
+      "via": "produses",
+      "collection": "optional"
     },
     "actionariCompatibile": {
-      "collection": "actionare",
       "via": "produses",
-      "dominant": true
+      "collection": "actionare"
     },
     "materialeCompatibile": {
-      "collection": "material",
-      "via": "produs"
+      "via": "produs",
+      "collection": "material"
     },
     "culoriCompatibile": {
-      "collection": "culoare",
-      "via": "produs"
+      "via": "produs",
+      "collection": "culoare"
+    },
+    "pozitieLista": {
+      "type": "integer"
+    },
+    "subTip": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coduris",
+  "info": {
+    "name": "coduri",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "denumire": {
+      "type": "string"
+    },
+    "atentionare": {
+      "type": "string"
+    },
+    "activ": {
+      "type": "string",
+      "maxLength": 2
+    },
+    "key": {
+      "type": "integer"
+    },
+    "tipProdus": {
+      "type": "string"
+    },
+    "material": {
+      "via": "coduris",
+      "model": "material"
+    },
+    "pozitieLista": {
+      "type": "integer"
+    },
+    "subTip": {
+      "type": "string"
+    }
+  }
+}

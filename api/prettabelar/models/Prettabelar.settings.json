@@ -1,5 +1,5 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "prettabelars",
   "info": {
     "name": "prettabelar",
@@ -8,40 +8,40 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "tipProdus": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "idProdus": {
-      "default": "",
       "type": "integer",
       "required": true
     },
     "lungime": {
-      "default": 0,
       "type": "integer",
+      "default": 0,
       "required": true
     },
     "inaltime": {
-      "default": 0,
       "type": "integer",
+      "default": 0,
       "required": true
     },
     "pret": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "valuta": {
-      "default": "",
       "type": "string"
     },
     "key": {
-      "default": "",
       "type": "integer"
+    },
+    "subTip": {
+      "type": "string"
     }
   }
 }

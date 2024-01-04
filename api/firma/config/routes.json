@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/firmas",
-      "handler": "Firma.find",
+      "handler": "firma.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/firmas/count",
-      "handler": "Firma.count",
+      "handler": "firma.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/firmas/:id",
-      "handler": "Firma.findOne",
+      "handler": "firma.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/firmas",
-      "handler": "Firma.create",
+      "handler": "firma.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/firmas/:id",
-      "handler": "Firma.update",
+      "handler": "firma.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/firmas/:id",
-      "handler": "Firma.destroy",
+      "handler": "firma.delete",
       "config": {
         "policies": []
       }

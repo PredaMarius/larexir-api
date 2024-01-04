@@ -1,5 +1,5 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "actionares",
   "info": {
     "name": "actionare",
@@ -8,49 +8,51 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "tipProdus": {
-      "default": "",
-      "maxLength": 100,
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 100
     },
     "key": {
-      "default": "",
       "type": "integer",
       "required": true
     },
     "denumire": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "pret": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "procentSuplimentar": {
-      "default": 0,
-      "type": "integer"
+      "type": "integer",
+      "default": 0
     },
     "atentionare": {
-      "default": "",
       "type": "string"
     },
     "dimLamela": {
-      "default": "",
       "type": "integer"
     },
     "activ": {
+      "type": "string",
       "default": "DA",
-      "maxLength": 2,
-      "type": "string"
+      "maxLength": 2
     },
     "produses": {
-      "model": "produs",
-      "via": "actionariCompatibile"
+      "via": "actionariCompatibile",
+      "model": "produs"
+    },
+    "pozitieLista": {
+      "type": "integer"
+    },
+    "subTip": {
+      "type": "string"
     }
   }
 }

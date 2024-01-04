@@ -1,5 +1,5 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "culoares",
   "info": {
     "name": "culoare",
@@ -8,56 +8,55 @@
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "tipProdus": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "componenta": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "denumire": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "atentionare": {
-      "default": "",
       "type": "string"
     },
     "dimLamela": {
-      "default": "",
       "type": "integer"
     },
     "codCuloare": {
-      "default": "",
       "type": "string"
     },
     "pret": {
-      "default": 0,
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "activ": {
+      "type": "string",
       "default": "DA",
-      "maxLength": 2,
-      "type": "string"
+      "maxLength": 2
     },
     "key": {
-      "default": "",
+      "type": "integer"
+    },
+    "procentSuplimentar": {
       "type": "integer"
     },
     "produs": {
-      "model": "produs",
-      "via": "culoriCompatibile"
+      "via": "culoriCompatibile",
+      "model": "produs"
     },
-    "procentSuplimentar": {
-      "default": "",
+    "pozitieLista": {
       "type": "integer"
+    },
+    "subTip": {
+      "type": "string"
     }
   }
 }

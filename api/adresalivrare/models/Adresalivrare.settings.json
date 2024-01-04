@@ -1,48 +1,41 @@
 {
-  "connection": "default",
+  "kind": "collectionType",
   "collectionName": "adresalivrares",
   "info": {
-    "name": "adresalivrare",
-    "description": ""
+    "name": "adresalivrare"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "comment": ""
+    "draftAndPublish": false
   },
+  "pluginOptions": {},
   "attributes": {
     "numeLocatie": {
-      "default": "",
       "type": "string",
       "required": true
     },
     "oras": {
-      "default": "",
       "type": "string"
     },
     "adresa": {
-      "default": "",
       "type": "string"
     },
     "judet": {
-      "default": "",
       "type": "string"
     },
     "codPostal": {
-      "default": "",
       "type": "string"
     },
     "telefon": {
-      "default": "",
       "type": "string"
     },
     "observatii": {
-      "default": "",
       "type": "string"
     },
     "idFirma": {
-      "model": "firma",
-      "via": "adresalivrares"
+      "via": "adresalivrares",
+      "model": "firma"
     }
   }
 }

@@ -1,3 +1,3 @@
-# larexir-api
+# Strapi application
 
-A quick description of larexir-api.
+A quick description of your strapi application

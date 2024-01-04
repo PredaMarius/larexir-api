@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/culoares",
-      "handler": "Culoare.find",
+      "handler": "culoare.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/culoares/count",
-      "handler": "Culoare.count",
+      "handler": "culoare.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/culoares/:id",
-      "handler": "Culoare.findOne",
+      "handler": "culoare.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/culoares",
-      "handler": "Culoare.create",
+      "handler": "culoare.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/culoares/:id",
-      "handler": "Culoare.update",
+      "handler": "culoare.update",
       "config": {
         "policies": []
       }
@@ -43,7 +43,7 @@
     {
       "method": "DELETE",
       "path": "/culoares/:id",
-      "handler": "Culoare.destroy",
+      "handler": "culoare.delete",
       "config": {
         "policies": []
       }

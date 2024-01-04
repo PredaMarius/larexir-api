@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/comandas",
-      "handler": "Comanda.find",
+      "handler": "comanda.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/comandas/count",
-      "handler": "Comanda.count",
+      "handler": "comanda.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/comandas/:id",
-      "handler": "Comanda.findOne",
+      "handler": "comanda.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/comandas",
-      "handler": "Comanda.create",
+      "handler": "comanda.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/comandas/:id",
-      "handler": "Comanda.update",
+      "handler": "comanda.update",
       "config": {
         "policies": []
       }
@@ -43,15 +43,7 @@
     {
       "method": "DELETE",
       "path": "/comandas/:id",
-      "handler": "Comanda.destroy",
-      "config": {
-        "policies": []
-      }
-    },
-   { 
-      "method": "POST",
-      "path": "/comandas/delete/:id",
-      "handler": "Comanda.destroy",
+      "handler": "comanda.delete",
       "config": {
         "policies": []
       }

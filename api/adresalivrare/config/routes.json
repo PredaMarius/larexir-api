@@ -3,7 +3,7 @@
     {
       "method": "GET",
       "path": "/adresalivrares",
-      "handler": "Adresalivrare.find",
+      "handler": "adresalivrare.find",
       "config": {
         "policies": []
       }
@@ -11,7 +11,7 @@
     {
       "method": "GET",
       "path": "/adresalivrares/count",
-      "handler": "Adresalivrare.count",
+      "handler": "adresalivrare.count",
       "config": {
         "policies": []
       }
@@ -19,7 +19,7 @@
     {
       "method": "GET",
       "path": "/adresalivrares/:id",
-      "handler": "Adresalivrare.findOne",
+      "handler": "adresalivrare.findOne",
       "config": {
         "policies": []
       }
@@ -27,7 +27,7 @@
     {
       "method": "POST",
       "path": "/adresalivrares",
-      "handler": "Adresalivrare.create",
+      "handler": "adresalivrare.create",
       "config": {
         "policies": []
       }
@@ -35,7 +35,7 @@
     {
       "method": "PUT",
       "path": "/adresalivrares/:id",
-      "handler": "Adresalivrare.update",
+      "handler": "adresalivrare.update",
       "config": {
         "policies": []
       }
@@ -43,15 +43,7 @@
     {
       "method": "DELETE",
       "path": "/adresalivrares/:id",
-      "handler": "Adresalivrare.destroy",
-      "config": {
-        "policies": []
-      }
-    },
-    {
-      "method": "POST",
-      "path": "/adresalivrares/delete/:id",
-      "handler": "Adresalivrare.destroy",
+      "handler": "adresalivrare.delete",
       "config": {
         "policies": []
       }
